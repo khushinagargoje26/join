@@ -1,0 +1,6 @@
+// left outer join  perfomed on sakila database//
+SELECT * FROM sakila.actor;
+select actor.first_name, actor.last_name, actor.actor_id , film_actor.film_id 
+from actor left outer join film_actor 
+on actor.actor_id= film_actor.actor_id ;
+
