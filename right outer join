@@ -1,0 +1,7 @@
+// operation on right outer join in sakila database //
+
+SELECT * FROM sakila.address;
+select address.address_id , address.address, address.district , city.city, city.city_id
+from address right outer join city 
+on address.address= city.city_id;
+ 
